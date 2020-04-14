@@ -8,12 +8,12 @@ public class EnrollAndPracticeTest extends TestBase {
 
     HomePage homePage = new HomePage(); //  object created for home page ]
 
-    @Test
+    @Test(priority = 0,groups = {"Sanity","Regression"})
     public void userShouldClickOnPracticeLink() {
         homePage.clickOnPracticeLink();
     }
 
-    @Test
+    @Test(priority = 1,groups = {"Smoke","Regression"})
     public void userShouldClickOnEnrollLink() {
         homePage.clickOnEnrolNowLink();
     }
